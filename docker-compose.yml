@@ -20,5 +20,12 @@ services:
       - 8080:80
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - certs:/etc/letsencrypt
+      - certs-data:/data
 volumes:
   db_data:
+    certs:
+    certs-data:
