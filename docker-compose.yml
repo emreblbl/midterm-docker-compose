@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  app:
+  wordpress:
     image: wordpress:fpm-alpine
     depends_on:
       - db
