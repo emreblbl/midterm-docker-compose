@@ -6,7 +6,7 @@ services:
     depends_on:
       - db
     volumes:
-        - wordpress_data:/var/www/html
+      - wordpress_data:/var/www/html
   db:
     image: mariadb
     environment:
@@ -27,5 +27,6 @@ services:
       - certs-data:/data
 volumes:
   db_data:
-    certs:
-    certs-data:
+  certs:
+  certs-data:
+  wordpress:
